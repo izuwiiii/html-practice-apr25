@@ -1,1 +1,17 @@
+.main {
 
+
+}
+
+.person {
+  &__photo {
+    width: 200px;
+    height: 200px;
+
+    img {
+      width: inherit;
+      border-radius: 50%;
+    }
+  }
+
+}
