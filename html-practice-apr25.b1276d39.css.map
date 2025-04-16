@@ -1,0 +1,1 @@
+{"mappings":"AAME;;;;;AAIE","sources":["main.scss"],"sourcesContent":[".main {\n\n\n}\n\n.person {\n  &__photo {\n    width: 200px;\n    height: 200px;\n\n    img {\n      width: inherit;\n      border-radius: 50%;\n    }\n  }\n\n}"],"names":[],"version":3,"file":"html-practice-apr25.b1276d39.css.map","sourceRoot":"/__parcel_source_root/"}
