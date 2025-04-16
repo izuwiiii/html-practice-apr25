@@ -1,10 +1,50 @@
+.main {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.person {
+  width: fit-content;
+}
+
 .person__photo {
   width: 200px;
   height: 200px;
+  position: relative;
 }
 
 .person__photo img {
   width: inherit;
   border-radius: 50%;
+}
+
+.person__photo span {
+  color: #8b0000;
+  background-color: #fff;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  padding: 7px 12px;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.person__extra {
+  display: none;
+}
+
+.person__details {
+  justify-content: center;
+  margin-top: 8px;
+  display: flex;
+}
+
+.person__name {
+  color: #2f4f4f;
+  font-size: 20px;
+  font-weight: bold;
 }
 /*# sourceMappingURL=html-practice-apr25.b1276d39.css.map */
