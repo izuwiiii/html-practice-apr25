@@ -17,12 +17,34 @@
 
 .person {
   width: fit-content;
+  box-sizing: border-box;
+  padding: 10px 10px 16px;
+  transition: border-radius 1s ease,
+  scale 1s ease;
+
+  &:hover {
+    background-color: #EEEEEE;
+    border-radius: 10px;
+    scale: 1.2;
+
+    .person__photo {
+      img {
+        border-radius: 60px;
+      }
+    }
+
+    .person__extra {
+      opacity: 1;
+    }
+  }
+
   &__photo {
     position: relative;
     width: 200px;
     height: 200px;
 
     img {
+      transition: 1s;
       width: inherit;
       border-radius: 50%;
     }
@@ -46,13 +68,20 @@
   }
 
   &__extra {
-    display: none;
+    // position: absolute;
+    // bottom: 10px;
+    opacity: 0;
+    // display: none;
   }
 
   &__details {
     margin-top: 8px;
+
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 9px;
   }
 
   &__name {
